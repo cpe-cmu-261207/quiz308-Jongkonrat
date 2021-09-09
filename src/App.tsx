@@ -15,11 +15,11 @@ function App() {
           {/* image and name */}
           <div className="flex space-x-2 items-center">
             <img className="w-12 h-12 rounded-full" src="/profileImages/picturepost.jpg"></img>
-            <span className='font-semibold text-lg'>Jongkonrat Pisitnawakun 630610722</span>
+            <span className='font-semibold text-lg text-white'>Jongkonrat Pisitnawakun 630610722</span>
           </div>
 
           {/* status message */}
-          <p>Quiz ทำเอาลนไปหมดเลยค่า ไม่ไหวแล้ว</p>
+          <p className="text-white">Quiz ทำเอาลนไปหมดเลยค่า ไม่ไหวแล้ว</p>
 
           {/* like section */}
           <div className='flex items-center'>
@@ -37,7 +37,7 @@ function App() {
             <img className="w-10 w-10 rounded-full" src={user1.userImagePath}></img>
             <div className="bg-gray-500 rounded-lg p-2">
               <p className="font-semibold text-white">{user1.username}</p>
-              <p>{user1.commentText}</p>
+              <p className="text-white">{user1.commentText}</p>
 
               {/* like section (จะไม่แสดงถ้าไม่มีใครไลค์เลย) */}
 
@@ -55,7 +55,7 @@ function App() {
             <img className="w-10 w-10 rounded-full" src={user2.userImagePath}></img>
             <div className="bg-gray-500 rounded-lg p-2">
               <p className="font-semibold text-white">{user2.username}</p>
-              <p>{user2.commentText}</p>
+              <p className="text-white">{user2.commentText}</p>
 
               {/* like section (จะไม่แสดงถ้าไม่มีใครไลค์เลย) */}
 
