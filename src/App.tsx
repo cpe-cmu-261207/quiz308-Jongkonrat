@@ -35,8 +35,8 @@ function App() {
           {/* normal comment */}
           <div className="flex p-2 items-start space-x-2">
             <img className="w-10 w-10 rounded-full" src={user1.userImagePath}></img>
-            <div className="bg-gray-200 rounded-lg p-2">
-              <p className="font-semibold">{user1.username}</p>
+            <div className="bg-gray-500 rounded-lg p-2">
+              <p className="font-semibold text-white">{user1.username}</p>
               <p>{user1.commentText}</p>
 
               {/* like section (จะไม่แสดงถ้าไม่มีใครไลค์เลย) */}
@@ -44,7 +44,7 @@ function App() {
               {user1.likeNum > 0 ?
                 <div className='flex items-center'>
                   <img className='w-4 h-4 mr-1' src='/like.svg'></img>
-                  <p className='text-gray-500'>{user1.likeNum} คน</p>
+                  <p className='text-gray-300'>{user1.likeNum} คน</p>
                 </div> : null}
             </div>
           </div>
@@ -53,8 +53,8 @@ function App() {
           {/* ต่างกันตรงที่มี padding มากกว่าเท่านั้น (pl-14) */}
           {user1.replies.map(user2 => <div className="flex p-2 items-start space-x-2 pl-14">
             <img className="w-10 w-10 rounded-full" src={user2.userImagePath}></img>
-            <div className="bg-gray-200 rounded-lg p-2">
-              <p className="font-semibold">{user2.username}</p>
+            <div className="bg-gray-500 rounded-lg p-2">
+              <p className="font-semibold text-white">{user2.username}</p>
               <p>{user2.commentText}</p>
 
               {/* like section (จะไม่แสดงถ้าไม่มีใครไลค์เลย) */}
@@ -62,7 +62,7 @@ function App() {
               {user2.likeNum > 0 ?
                 <div className='flex items-center'>
                   <img className='w-4 h-4 mr-1' src='/like.svg'></img>
-                  <p className='text-gray-500'>{user2.likeNum} คน</p>
+                  <p className='text-white'>{user2.likeNum} คน</p>
                 </div> : null}
             </div>
           </div>)}
