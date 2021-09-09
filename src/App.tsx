@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="p-2">
       {/* post container */}
-      <div className="mx-auto max-w-2xl bg-white rounded-md shadow p-4 space-y-2 divide-y">
+      <div className="mx-auto max-w-2xl bg-gray-800 rounded-md shadow p-4 space-y-2 divide-y">
 
         {/* ส่วนของเจ้าของ post */}
         <div className="space-y-2">
